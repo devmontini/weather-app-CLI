@@ -8,10 +8,12 @@ import {
   GET_SUNRISE,
 } from "./types";
 
+// import * as functions from "firebase-functions";
+// const apiKey = require("stripe")(functions.config().api.key);
 // const functions = require("firebase-functions");
 // const config = functions.config();
 // const apiKey = config.api.key;
-const apiKey = process.env.REACT_APP_API_KEY;
+const apiKey = process.env.REACT_APP_weatherKey;
 
 export function getCountry(lat, lon) {
   return async function (dispatch) {
