@@ -34,7 +34,8 @@ const Home = () => {
             <div className="flex w-full md:h-full md:flex-row md:flex-wrap flex-col">
               <Card key={countrie.id} countrie={countrie} />
               <div className="flex flex-col md:mt-2 md:flex-row w-full">
-                <Solar key={countrie.id} countrie={countrie} />
+                <Solar key={countrie.id} />
+                {/* <Solar key={countrie.id} countrie={countrie} /> */}
                 <Layer key={countrie.id} countrie={countrie} />
               </div>
               <Week key={countrie.id} countrie={countrie} />

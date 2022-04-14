@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getPollution } from "../../redux/actions";
+import React from "react";
+// import React, { useEffect, useState } from "react";
+// import { useDispatch, useSelector } from "react-redux";
+// import { getPollution } from "../../redux/actions";
 import Loader from "./assets/Loader";
 
-const Solar = ({ countrie }) => {
+const Solar = () => {
+  // { countrie } falta eso de PROPPPPPP ESO FALTA { countrie }
   // const dispatch = useDispatch();
   // const pollution = useSelector((state) => state.pollution);
   // const [loading, setLoading] = useState(true);
