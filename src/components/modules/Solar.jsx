@@ -11,9 +11,8 @@ const Solar = ({ countrie }) => {
   const lon = countrie.city.coord.lon;
 
   useEffect(() => {
+    dispatch(getPollution(lat, lon));
     async function getLoad() {
-      await dispatch(getPollution(lat, lon));
-
       setTimeout(() => {
         setLoading(false);
       }, 2000);
