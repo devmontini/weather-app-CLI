@@ -13,13 +13,13 @@ import {
 // const functions = require("firebase-functions");
 // const config = functions.config();
 // const apiKey = config.api.key;
-const apiKey = process.env.REACT_APP_weatherKey;
+// const apiKey = process.env.REACT_APP_weatherKey;
 
 export function getCountry(lat, lon) {
   return async function (dispatch) {
     try {
       const res = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=f6f080f7e7481092784c339140a35c4d&units=metric`
       );
       return dispatch({
         type: GET_COUNTRY,
@@ -36,7 +36,7 @@ export function getCountryData(name) {
   return async function (dispatch) {
     try {
       const res = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=${apiKey}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=f6f080f7e7481092784c339140a35c4d&units=metric`
       );
 
       return dispatch({
@@ -53,7 +53,7 @@ export function getSearch(name) {
   return async function (dispatch) {
     try {
       const res = await axios.get(
-        `https://api.openweathermap.org/data/2.5/forecast?q=${name}&appid=${apiKey}&units=metric`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${name}&appid=f6f080f7e7481092784c339140a35c4d&units=metric`
       );
       return dispatch({
         type: GET_SEARCH,
@@ -77,7 +77,7 @@ export function getPollution(lat, lon) {
   return async function (dispatch) {
     try {
       const res = await axios.get(
-        `https://api.openweathermap.org/data/2.5//air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
+        `https://api.openweathermap.org/data/2.5//air_pollution?lat=${lat}&lon=${lon}&appid=f6f080f7e7481092784c339140a35c4d&units=metric`
       );
       return dispatch({
         type: GET_POLLUTION,
