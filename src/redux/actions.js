@@ -77,7 +77,7 @@ export function getPollution(lat, lon) {
   return async function (dispatch) {
     try {
       const res = await axios.get(
-        `http://api.openweathermap.org/data/2.5//air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
+        `https://api.openweathermap.org/data/2.5//air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
       );
       return dispatch({
         type: GET_POLLUTION,
