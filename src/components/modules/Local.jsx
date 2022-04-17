@@ -1,6 +1,18 @@
 import React from "react";
 
 const Local = ({ loc }) => {
+  if (loc === 0 || undefined || null || [] || {}) {
+    return (
+      <>
+        <div className="w-full h-full grid grid-rows-3">
+          <div className="flex flex-col items-center justify-center">
+            Your geolocation is disabled
+          </div>
+        </div>
+      </>
+    );
+  }
+
   const icon = loc.weather[0].icon;
 
   return (
