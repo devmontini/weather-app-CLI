@@ -30,6 +30,18 @@ const Solar = ({ countrie }) => {
     );
   }
 
+  if (pollution.length === 0) {
+    return (
+      <>
+        <div className="m-4 md:m-0 md:ml-1 md:w-full md:h-auto flex h-fit flex-col rounded-xl bg-orange-700 p-2 bg-opacity-25 shadow-lg">
+          <div className="flex w-full justify-center">
+            The pollution data its not avilable
+          </div>
+        </div>
+      </>
+    );
+  }
+
   const data = pollution.list[0].components;
 
   function niveles(e) {

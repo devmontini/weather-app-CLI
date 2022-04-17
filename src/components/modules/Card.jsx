@@ -28,6 +28,18 @@ const Card = ({ countrie }) => {
     );
   }
 
+  if (data.length === 0) {
+    return (
+      <>
+        <div className="w-full h-full grid grid-rows-3">
+          <div className="flex flex-col items-center justify-center">
+            Your geolocation is disabled
+          </div>
+        </div>
+      </>
+    );
+  }
+
   return (
     <>
       <div className="m-4 md:m-0 md:mt-2 md:h-auto flex md:w-full h-fit flex-col md:flex-row rounded-xl bg-orange-700 p-2 bg-opacity-25 shadow-lg">

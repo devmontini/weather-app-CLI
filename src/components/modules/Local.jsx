@@ -1,7 +1,7 @@
 import React from "react";
 
 const Local = ({ loc }) => {
-  if (loc === 0 || undefined || null || [] || {}) {
+  if (loc.length === 0) {
     return (
       <>
         <div className="w-full h-full grid grid-rows-3">
