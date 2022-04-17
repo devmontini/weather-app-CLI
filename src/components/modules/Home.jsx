@@ -30,6 +30,10 @@ const Home = () => {
             <div className="flex flex-grow items-center justify-center">
               <h3 className="font-bold text-em5">Location...</h3>
             </div>
+          ) : countrie.length === 0 ? (
+            <div className="flex flex-grow items-center justify-center">
+              <h3 className="font-bold text-em5">Seacrh by name</h3>
+            </div>
           ) : (
             <div className="flex w-full md:h-full md:flex-row md:flex-wrap flex-col">
               <Card key={countrie.id} countrie={countrie} />
