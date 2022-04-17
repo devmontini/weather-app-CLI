@@ -2,7 +2,7 @@
 
 <div>
     <img align="left" alt="Deploy App" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/appstore.svg" />
-    <a href="https://weather-app-65858.firebaseapp.com/">
+    <a href="https://weather-app-95b79.web.app/">
        Deploy App
     </a>
 </div>
