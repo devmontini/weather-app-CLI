@@ -28,7 +28,7 @@
 
 <img align="right" alt="GIF" src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" />
 
-### Proyecto de actividades turísticas!
+### Proyecto de app de teimpo!
 
 - Single Page Application (SPA), APIs (openweather).
 - Weather, Geolocation, Search, Solar, Pollution, Week and more.
